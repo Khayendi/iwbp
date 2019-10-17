@@ -6,7 +6,9 @@ body {
 }
 
 img {
+    margin: 15px 15px auto;
     max-width: 100%;
+    float: left;
     display: block;
 }
 
@@ -28,13 +30,20 @@ img {
 nav {
     background-color: #000;
     padding: 0.5em;
+    display:grid;
+    position: sticky;
+    top:0px;
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 10px;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
     list-style:none;
-    display:flex;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr auto;
+    
 }
 
 nav a {
@@ -46,6 +55,7 @@ nav a {
 .photos {
     list-style: none;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 10px;
     padding: 10px;
     grid-row-gap:1px;
